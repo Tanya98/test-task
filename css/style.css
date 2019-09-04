@@ -1,0 +1,235 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #c6c3c3;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main-container .container {
+  display: flex;
+  flex-direction: column;
+  width: 685px;
+  min-height: 595px;
+  position: absolute;
+  z-index: 100000;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.main-container .container .text {
+  color: #174c2e;
+  font-family: "Titillium Web", sans-serif;
+}
+.main-container .container .block-top {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, #a9d156, #c3e187);
+  width: 100%;
+}
+.main-container .container .block-top .block-top-container {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .container .block-top .block-top-container .block-top-title {
+  font-size: 36px;
+  position: absolute;
+  font-weight: 700;
+  top: 125px;
+  left: 215px;
+}
+.main-container .container .block-top .block-top-container .block-left-figure {
+  background-image: url("../images/left-figures.png");
+  width: 160px;
+  height: 162px;
+  background-repeat: no-repeat;
+  padding: 10px 12px;
+  background-position: center;
+}
+.main-container .container .block-top .block-top-container .block-container {
+  display: flex;
+}
+.main-container .container .block-top .block-top-container .block-container .right-figure-block {
+  background-image: url("../images/right-figures.png");
+  width: 120px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-container .container .block-top .block-top-container .block-container .figure-button-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40px;
+}
+.main-container .container .block-top .block-top-container .block-container .figure-button-block .close-button {
+  background-image: url("../images/close-but.png");
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  padding: 20px 0px 0px 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-container .container .block-top .block-top-container .block-container .figure-button-block .block-circles {
+  background-image: url("../images/right-smal-circles.png");
+  margin: 32px 0px 0px 0px;
+  width: 60px;
+  height: 92px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-container .container .block-top .block-top-container .block-img {
+  border-radius: 50%;
+  background: white;
+  position: absolute;
+  width: 148px;
+  height: 148px;
+  top: -75px;
+  left: 270px;
+}
+.main-container .container .block-top .block-top-container .block-img img {
+  margin: 25px;
+}
+.main-container .container .block-top .block-text {
+  text-align: center;
+  padding: 0px 0px 15px 0px;
+}
+.main-container .container .block-top .block-text .block-top-subtitle {
+  font-size: 35px;
+  font-weight: 400;
+}
+.main-container .container .block-top .block-text .block-top-text {
+  font-size: 24px;
+  font-weight: 400;
+}
+.main-container .container .main-content {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+}
+.main-container .container .main-content .block-phones-img {
+  width: 115px;
+  height: 188px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main-container .container .main-content .block-left-img {
+  background-image: url("../images/left-phones-img.png");
+}
+.main-container .container .main-content .block-right-img {
+  background-image: url("../images/right-phones-img.png");
+}
+.main-container .container .main-content .block-content {
+  width: 425px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 28px;
+}
+.main-container .container .main-content .block-content .block-content-title {
+  text-align: center;
+  line-height: 75px;
+  width: 100%;
+  height: 80px;
+  border: 2px solid #bee071;
+  border-radius: 9px;
+  font-size: 36px;
+  font-weight: 300;
+  margin-top: 13px;
+}
+.main-container .container .main-content .block-content .block-content-button {
+  border: 0;
+  border-radius: 9px;
+  background: linear-gradient(0deg, #a9d156 0%, #abd35b 83%, #bcdd7a 100%);
+  width: 423px;
+  height: 84px;
+  font-weight: 700;
+  font-size: 36px;
+  cursor: pointer;
+}
+.main-container .container .main-content .block-content .block-content-button:focus {
+  outline: none;
+}
+.main-container .container .main-content .block-content .block-content-text {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 16px 0px;
+}
+
+@media all and (max-width: 680px) {
+  .main-container .container {
+    width: 680px;
+  }
+}
+@media all and (max-width: 360px) {
+  .main-container .container {
+    width: 360px;
+  }
+  .main-container .container .main-content {
+    justify-content: center;
+  }
+  .main-container .container .main-content .block-phones-img {
+    display: none;
+  }
+  .main-container .container .main-content .block-content {
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+  }
+  .main-container .container .main-content .block-content .block-content-title {
+    margin-top: 28px;
+    font-size: 29px;
+  }
+  .main-container .container .main-content .block-content .block-content-text {
+    font-size: 12.5px;
+  }
+  .main-container .container .main-content .block-content .block-content-button {
+    width: 320px;
+  }
+  .main-container .container .block-top {
+    height: 266px;
+  }
+  .main-container .container .block-top .block-top-container {
+    justify-content: flex-end;
+    margin-top: 70px;
+  }
+  .main-container .container .block-top .block-top-container .block-top-title {
+    font-size: 41px;
+    position: inherit;
+  }
+  .main-container .container .block-top .block-top-container .block-left-figure {
+    display: none;
+  }
+  .main-container .container .block-top .block-top-container .block-container .right-figure-block {
+    display: none;
+  }
+  .main-container .container .block-top .block-top-container .block-container .block-circles {
+    display: none;
+  }
+  .main-container .container .block-top .block-text .block-top-subtitle {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .main-container .container .block-top .block-text .block-top-text {
+    font-size: 24px;
+  }
+}
+@media all and (max-width: 320px) {
+  .main-container .container {
+    width: 320px;
+  }
+  .main-container .container .main-content .block-content {
+    width: 285px;
+  }
+  .main-container .container .main-content .block-content .block-content-button {
+    width: 285px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
