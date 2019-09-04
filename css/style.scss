@@ -107,21 +107,7 @@ body {
           }
         }
       }
-
-      // .block-img {
-      //   border-radius: 50%;
-      //   background: white;
-      //   position: absolute;
-      //   width: 148px;
-      //   height: 148px;
-      //   top: -75px;
-      //   left: 270px;
-
-      //   img {
-      //     margin: 25px;
-      //   }
     }
-
   }
 
   .block-text {
@@ -221,7 +207,7 @@ body {
   }
 }
 
-@media all and (max-width: 414px) {
+@media all and (max-width: 675px) {
   .container {
     width: 400px;
 
